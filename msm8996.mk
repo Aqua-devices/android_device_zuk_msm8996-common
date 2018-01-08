@@ -21,6 +21,11 @@
 # definition file).
 #
 
+# apn from marlin
+PRODUCT_COPY_FILES := device/zuk/msm8996-common/configs/apns-full-conf.xml:system/etc/apns-conf.xml
+
+$(call inherit-product, vendor/aquarios/config/utils.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/zuk/msm8996-common/msm8996-common-vendor.mk)
 
